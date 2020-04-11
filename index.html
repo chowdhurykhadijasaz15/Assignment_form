@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>XYZ Company Ltd.</h1><br>
+		<h2>Teamleaders informations update and training requisition form</h2><br><br>
+		<form  action="#" method="post" enctype="">
+			<!--text type-->
+			<label for="username">Username</label><br>
+			<input type="text" placeholder="Enter your office username" name="username"  id="username"  class="username">
+			<br><br>
+			<label for="pin">PIN</label><br>
+			<input type="pin" placeholder="personal information number" name="pin"  id="pin" size="4" class="pin">
+			<br><br>	
+			<label for="f_name">First Name</label><br>
+			<input type="text" placeholder="First Name" name="f_name"  id="f_name"  class="f_name">
+			<br><br>
+			<label for="l_name">Last Name</label><br>
+			<input type="text" placeholder="Last Name" name="l_name"  id="l_name"  class="l_name">
+			<br><br>
+			<label for="email">e-mail</label><br>
+			<input type="email" placeholder="e-mail" name="email"  id="email"  class="email">
+			<br><br>
+			<label for="phone">Phone number</label><br>
+			<input type="tel" placeholder="000-00-00-00-00" name="phone"  id="phone"  class="phone">
+			<br><br>
+			<label for="dob">Date of Birth</label><br>
+			<input type="month" placeholder="" name="dob"  id="dob"  class="dob">
+			<br><br>
+			<p>Gender</p>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male"  value="male" class="male">
+			<label for="female">Female</label>
+			<input type="radio" name="gender"  id="female" value="female" class="female">
+			<br><br>
+			<label for="quantity">Team members</label><br>
+			<input type="number" placeholder=""  name="quantity"  id="quantity" min="0" max="50" value="0" class="quantity">
+			<br><br>
+			<p>For our new project please visit </p>
+			<label for="homepage">Official Homepage/Enterprise Resource Planning </label><br>
+			<input type="url" placeholder="url" name="homepage"  id="homepage" class="homepage">
+			<br><br>
+			<p>Your Required Training</p>
+			<label for="training1">Customer Service</label>
+			<input type="checkbox" name="training1"  id="training1"  value="Customer Service" class="training1">
+			<label for="training2">Commercial</label>
+			<input type="checkbox" name="training2"  id="training2"  value="Commercial"  class="training2">
+			<label for="training3">Supply Chain</label>
+			<input type="checkbox" name="training3"  id="training3"  value="Supplychain" class="training3">
+			<br><br>
+			<label for="appt">Your required Training Time</label><br>
+			<input type="time" placeholder="input time" name="appt"  id="appt"  class="appt">
+			<br><br>
+			<label for="training">Training Way</label><br>
+			<input list="training"  name="training" class="training">
+			<datalist id="training">
+				<option>Online</option>
+				<option>Offline</option>
+			</datalist>
+			<br><br>
+			<label for="agree">Please agree </label><br>
+			<input type="text" placeholder="I will attain the submitted training with the required way." name="agree"  id="agree"  value=""readonly class="agree">
+			<br><br>
+			<label for="files">Training budget</label><br>
+			<input type="file" placeholder="attach file"    name="files" id="files" multiple class="files">
+			<br><br>
+			<label for="share">Want to share/comment</label><br>
+			<textarea cols="30" rows="20" placeholder="share or comment here" name="share" required id="share" class="share" ></textarea>
+			<button type="reset"> Reset</button>
+			<br><br>
+			<button class="submit" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
